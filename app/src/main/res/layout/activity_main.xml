@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.augmentis.culculator.MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn1_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btn1Clicked"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/Btn2_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btn2Clicked"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/Btn3_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btn3Clicked"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/Btnclear_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnclearClicked"
+            android:text="CLEAR" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn4_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btn4Clicked"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/Btn5_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btn5Clicked"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/Btn6_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btn6Clicked"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/Btndecimal_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btndecimalClicked"
+            android:text="." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn7_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btn7Clicked"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/Btn8_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btn8Clicked"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/Btn9_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btn9Clicked"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/Btn0_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btn0Clicked"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btnplus_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnplusClicked"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/Btnminus_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnminusClicked"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/Btnmulti_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnmultiClicked"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/Btndivide_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btndivideClicked"
+            android:text="/" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/RbCelsius_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Celsius" />
+
+            <RadioButton
+                android:id="@+id/RbFahrenheit_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fahrenheit" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/diatanceBetween"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/RbMiles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Miles" />
+
+            <RadioButton
+                android:id="@+id/RbKilometer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kilometer" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/Btnequal_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="btnequalClicked"
+            android:text="=" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/convertDigit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RbHex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hex" />
+
+            <RadioButton
+                android:id="@+id/RbDec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dec" />
+
+            <RadioButton
+                android:id="@+id/RbOct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oct" />
+
+            <RadioButton
+                android:id="@+id/RbBin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bin" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
